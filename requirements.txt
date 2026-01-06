@@ -2,5 +2,12 @@ pandas
 numpy
 matplotlib
 seaborn
+pyarrow
+scikit-learn
 jupyter
 pytest
+sentence-transformers
+langchain
+langchain-text-splitters
+faiss-cpu 
+tqdm

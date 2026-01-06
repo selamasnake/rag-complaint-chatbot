@@ -9,10 +9,12 @@ It transforms raw, unstructured complaint data into actionable insights for prod
 - `notebooks/` — Jupyter notebooks for analysis and preprocessing:
 
     - `eda_preprocessing.ipynb` — exploratory data analysis, complaint distributions, narrative length analysis, and text cleaning.  
+      - `chunking_embedding.ipynb` — stratified sampling, chunking, embedding, and vector store construction.
 
 - `src/` — Python modules for core preprocessing and EDA logic:
 
     - `data_preprocessing.py` — classes to load, filter, clean, and perform EDA on complaint datasets.  
+    - `chunking_embedding.py` — sampling, chunking, embedding, and vector store functionality.
 
 - `.github/workflows/unittests.yml` — CI workflow for automated testing.  
 
@@ -23,4 +25,4 @@ It transforms raw, unstructured complaint data into actionable insights for prod
 4. The RAG chatbot can then query the processed data to answer questions based on real customer complaints.  
 
 #### Requirements
-See `requirements.txt` for libraries including `pandas`, `numpy`, `matplotlib`, `seaborn` used for preprocessing and EDA.
+See `requirements.txt` for libraries including `pandas`, `numpy`, `matplotlib`, `seaborn`,  `sentence-transformers` `faiss-cpu`, `langchain`.
