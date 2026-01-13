@@ -1,5 +1,5 @@
-from retriever import FaissComplaintRetriever
-from generator import AnswerGenerator
+from .retriever import FaissComplaintRetriever
+from .generator import AnswerGenerator
 
 
 class RAGPipeline:
