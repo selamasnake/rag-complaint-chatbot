@@ -1,5 +1,5 @@
 from transformers import pipeline
-from prompts import RAG_PROMPT
+from .prompts import RAG_PROMPT
 
 
 class AnswerGenerator:

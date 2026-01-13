@@ -13,3 +13,4 @@ faiss-cpu
 tqdm
 transformers
 torch
+gradio
