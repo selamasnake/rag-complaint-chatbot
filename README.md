@@ -9,12 +9,17 @@ It transforms raw, unstructured complaint data into actionable insights for prod
 - `notebooks/` — Jupyter notebooks for analysis and preprocessing:
 
     - `eda_preprocessing.ipynb` — exploratory data analysis, complaint distributions, narrative length analysis, and text cleaning.  
-      - `chunking_embedding.ipynb` — stratified sampling, chunking, embedding, and vector store construction.
+    - `chunking_embedding.ipynb` — stratified sampling, chunking, embedding, and vector store construction.
+    - `rag_pipeline.ipynb` — End-to-end execution and evaluation of the RAG pipeline.
 
 - `src/` — Python modules for core preprocessing and EDA logic:
 
     - `data_preprocessing.py` — classes to load, filter, clean, and perform EDA on complaint datasets.  
     - `chunking_embedding.py` — sampling, chunking, embedding, and vector store functionality.
+    - `retriever.py` — Retrieves semantically relevant complaint text and metadata using FAISS.
+    - `generator.py` — Generates grounded analytical answers from retrieved complaint excerpts.
+    - `rag_pipeline.py` — Orchestrates retrieval, generation, and source attribution.
+    - `prompts.py` — Defines the structured prompt template for retrieval-augmented generation.
 
 - `.github/workflows/unittests.yml` — CI workflow for automated testing.  
 

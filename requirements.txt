@@ -11,3 +11,5 @@ langchain
 langchain-text-splitters
 faiss-cpu 
 tqdm
+transformers
+torch
